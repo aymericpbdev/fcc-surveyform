@@ -1,0 +1,25 @@
+.header {
+  color: rgba(11, 37, 132, 0.806);
+  background: rgba(47, 63, 136, 0.5);
+}
+
+.duck {
+  vertical-align: middle;
+  width: 15%;
+  height: auto;
+}
+
+.lab-ex, .lab-check {
+  display: block;
+  padding: 0.2rem 2rem;
+}
+
+.inline {
+  vertical-align: middle;
+  margin: 0 0 0 0;
+}
+
+.span-test {
+  color: white;
+  background: rgb(137, 129, 129)
+}
