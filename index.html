@@ -1,181 +1,125 @@
-<!DOCTYPE html />
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Fake Survey but true HTML/CSS</title>
+    <title>Survey About NOTHING</title>
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-    <body>
-      <div class="container">
-        <header class="header">
-          <h1 id="title" class="title">
-          A simple Survey about NOTHING
-          </h1>
-          <p id="description" class="description">
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">A simple Survey about NOTHING</h1>
+        <p id="description">
           This survey must be filled very seriously, NOTHING is <strong><u>no joke</u></strong>
-          </p>
-        </header>
-        <h2>
-        Who the <img src="https://img.freepik.com/psd-premium/canard-caoutchouc-jaune-isole-fond-transparent-png-psd_888962-1809.jpg" class="duck" alt="duck to f..." /> are you ?!
-        </h2>
-        <form id="survey-form">
-          <div class="identity-form">
-            <label id="name-label" for="name">
-              Has it a name ?
-            </label>
-            <input 
+        </p>
+      </header>
+      <h2>
+        Who the <img src="https://img.freepik.com/psd-premium/canard-caoutchouc-jaune-isole-fond-transparent-png-psd_888962-1809.jpg" class="duck" alt="duck" /> are you ?!
+      </h2>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">
+            Has it a name ? <span class="required">*</span>
+          </label>
+          <input 
             id="name" 
-            name="name" 
             type="text" 
-            class="form-1" 
             placeholder="Declare yourself, peasant !" 
             required />
-          </div>
-          <div class="email-form">
-            <label id="email-label" for="email">
-              Has it a mail on the Internets ?
-            </label>
-            <input 
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">
+            Has it a mail on the Internets ? <span class="required">*</span>
+          </label>
+          <input 
             id="email" 
-            name="email" 
             type="email" 
-            class="form-1" 
             placeholder="What's your box ?" 
             required />
-          </div> 
-          <div class="age-form">
-            <label id="number-label" for="age">
-              How far are we from its birth ?
-            </label>
-            <input 
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">
+            How far are we from its birth ? <span class="required">*</span>
+          </label>
+          <input 
             id="number"
-            name="age"
             type="number"
-            class="form-1"
             min="13"
             max="99"
             placeholder="?!" 
-            required /> 
-            <em>years</em>
-          </div>
-          <h2 id="description-2" class="description-2">
-            NOTHING is real, but... What is it ?
-          </h2>
-          <div class="nothing-form">
-            <label class="lab-ex" for="existence">
-            <input
-            id="existence"
-            name="existence"
-            value="black-hole"
-            type="radio"
-            class="inline"
-            checked />
+            required />
+        </div>
+        <h2>NOTHING is real, but... What is it ?</h2>
+        <!-- Radio buttons -->
+        <div class="form-group radio-group">
+          <label>
+            <input type="radio" name="existence" value="black-hole" checked />
             A black hole
-            </label>
-            <label class="lab-ex" for="existence">
-            <input
-            id="existence"
-            name="existence"
-            value="void"
-            type="radio"
-            class="inline" 
-            checked />
+          </label>
+          <label>
+            <input type="radio" name="existence" value="void" />
             The void
-            </label>
-            <label class="lab-ex" for="existence">
-            <input
-            id="existence"
-            name="existence"
-            value="blank"
-            type="radio"
-            class="inline"
-            checked />
+          </label>
+          <label>
+            <input type="radio" name="existence" value="blank" />
             A blank
-            </label>
-            <label class="lab-ex" for="existence">
-            <input
-            id="existence"
-            name="existence"
-            value="idk"
-            type="radio"
-            class="inline"
-            checked />
+          </label>
+          <label>
+            <input type="radio" name="existence" value="idk" />
             I don't know, but surely real !
-            </label>
-            <label class="lab-ex" for="existence">
-            <input
-            id="existence"
-            name="existence"
-            value="nothing..."
-            type="radio"
-            class="inline"
-            checked />
+          </label>
+          <label>
+            <input type="radio" name="existence" value="nothing" />
             Obviously, nothing is NOTHING...
-            </label>            
-          </div>
-          <div class="dropdown">
-            <h2>What color would be NOTHING if you could see it ?</h2>
-            <select id="dropdown" name="color" required>
-            <option disabled selected value>Shoes a color</option>
-            <option value="White">As pure marble</option>
-            <option value="Black">As a moonless night</option>
-            <option value="Blue">Like a "great" movie by Luc Besson</option>
-            <option value="Green">Just like chlorophyll</option>
-            <option value="None">None because NOTHING is beyond our perception</option>
-            <option value="Idk">I don't know !</option>
-            </select>
-          </div>
-          <div class="checkboxes">
-            <h2>How did you end up here ?<span class="span-test">(Check all, <em>or not</em>)</span></h2>
-            <label class="lab-check">1
-              <input
-              id="1"
-              name="1"
-              value="1"
-              type="checkbox"
-              class="inline" />
-            </label>
-            <label class="lab-check">2
-              <input
-              id="2"
-              name="2"
-              value="2"
-              type="checkbox"
-              class="inline" />
-            </label>
-            <label class="lab-check">3
-              <input
-              id="3"
-              name="3"
-              value="3"
-              type="checkbox"
-              class="inline" />
-            </label>
-            <label class="lab-check">4
-              <input
-              id="4"
-              name="4"
-              value="4"
-              type="checkbox"
-              class="inline" />
-            </label>          
-          </div>
-          <div class="commentary">
-            <h3>Any suggestion for more head aches ?</h3>
-            <textarea
+          </label>            
+        </div>
+        <!-- Dropdown list -->
+        <div class="form-group">
+          <h2>What color would be NOTHING if you could see it ?</h2>
+          <select id="dropdown" required>
+            <option disabled selected value>Choose a color</option>
+            <option value="white">As pure marble</option>
+            <option value="black">As a moonless night</option>
+            <option value="blue">Like a "great" movie by Luc Besson</option>
+            <option value="green">Just like chlorophyll</option>
+            <option value="none">None because NOTHING is beyond our perception</option>
+            <option value="idk">I don't know !</option>
+          </select>
+        </div>
+        <!-- Checkboxes -->
+        <div class="form-group checkbox-group">
+          <h2>How did you end up here ? <span class="optional">(Check all,<em>or not</em>)</span></h2>
+          <label>
+            <input type="checkbox" value="1" />
+            1
+          </label>
+          <label>
+            <input type="checkbox" value="2" />
+            2
+          </label>
+          <label>
+            <input type="checkbox" value="3" />
+            3
+          </label>
+          <label>
+            <input type="checkbox" value="4" />
+            4
+          </label>          
+        </div>
+        <!-- Comment textarea -->
+        <div class="form-group">
+          <h3>Any suggestion for more headaches ?</h3>
+          <textarea
             id="comments"
-            name="comments"
-            class="comments"
+            rows="5"
             placeholder="Sometimes, somewhere, but not over the rainbow">
-            </textarea>
-          </div>
-          <h4>May we meet again</h4>
-          <input
-          id="submit"
-          name="submit"
-          type="submit"
-          class="submit" />
-        </form>
-      </div>
-    </body>
+          </textarea>
+        </div>
+        <!-- Submit button -->
+        <h4>May we meet again</h4>
+        <button type="submit">Submit to the void</button>
+      </form>
+    </div>
+  </body>
+</html>
