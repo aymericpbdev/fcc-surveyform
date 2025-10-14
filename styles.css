@@ -33,6 +33,7 @@ body {
   min-height: 100vh;
   padding: var(--space-md);
   animation: fadeIn 0.8s ease-in;
+  overflow-x: hidden;
 }
 
 /* Opacity effect for smooth apparition */
