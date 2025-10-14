@@ -2,7 +2,7 @@
 ## Responsive Web Design Certification
 
 **Variables explanation:**
-- Explicit color names around space, void, black holes
+- Explicit color names themed around space, void, black holes
 - ``--space-xs`` extra small (0.5rem)
 - ``--space-sm`` small (1rem)
 - ``--space-md`` medium (1.5rem)
@@ -16,12 +16,12 @@ My font choice is standard with an *"universal"* pile of font for Linux (KDE, Ub
 - **WIP** ``:focus`` & ``:focus-visible``
 - **WIP** ``:placeholder-shown`` to apply differences when placeholder is displayed or not *(input empty or filled)* and when filled with an error *(ex: wrong email format)*
 - **WIP** ``:valid`` & ``:invalid`` would work with ``placeholder-shown``
-- **WIP** ``visited`` for potential
+- **WIP** ``visited`` for potential links to show if visited or not
 
 
 **@keyframes :**
 - ``fadeIn`` for a smooth apparition of the whole survey 
-- ``slideUp`` for a
+- ``slideUp`` to give a pop-up effect
 - ``duckFloat`` for a bouncing/floating duck on hover
 
 
@@ -29,4 +29,4 @@ My font choice is standard with an *"universal"* pile of font for Linux (KDE, Ub
 - Desktop > 768px for "standard" sized screens
 - Tablet & small laptop ≤ 768px (``titles: 1.5 rem instead of 2rem``, ``smaller duck 20% instead of 15%``) to adapt design to middle size screens
 - Mobile & small tablet ≤ 480px (``body {padding: 0.5rem}``, ``titles: 1.3rem & 1.1rem``, ``bigger duck 25%``, ``smaller hover animation 2px instead of 5px``) to optimise lisibility on smaller screens
-- ``prefers-reduced-motion: reduce`` for users with accessibility setting to reduce motion
+- ``prefers-reduced-motion: reduce`` for users with accessibility settings to reduce motion
