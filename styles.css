@@ -197,15 +197,6 @@ textarea:hover {
 
 /* Dropdown selector */
 select {
-  width: 100%;
-  padding: var(--space-sm);
-  font-size: 1rem;
-  background: var(--void-black);
-  border: 2px solid var(--cosmic-blue);
-  border-radius: 6px;
-  color: var(--white-star);
-  font-family: inherit;
-  transition: all 0.3s;
   cursor: pointer;
 }
 
