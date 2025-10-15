@@ -13,7 +13,7 @@ My font choice is standard with an *"universal"* pile of font for Linux (KDE, Ub
 **Use of CSS pseudo-class :**
 - ``:hover`` to make an effect with mouse hover
 - ``:active`` to make a feedback on clic, gets slightly smaller
-- **WIP ongoing** ``:focus`` & ``:focus-visible``
+- **WIP** ``:focus`` & ``:focus-visible``
 
 
 **@keyframes :**
@@ -27,15 +27,3 @@ My font choice is standard with an *"universal"* pile of font for Linux (KDE, Ub
 - Tablet & small laptop ≤ 768px (``titles: 1.5 rem instead of 2rem``, ``smaller duck 20% instead of 15%``) to adapt design to middle size screens
 - Mobile & small tablet ≤ 480px (``body {padding: 0.5rem}``, ``titles: 1.3rem & 1.1rem``, ``bigger duck 25%``, ``smaller hover animation 2px instead of 5px``) to optimise lisibility on smaller screens
 - ``prefers-reduced-motion: reduce`` for users with accessibility settings to reduce motion
-
-**TODO/WIP :**
-- ``:focus`` & ``:focus-visible``
-- ``:placeholder-shown`` to apply differences when placeholder is displayed or not *(input empty or filled)* and when filled with an error *(ex: wrong email format)*
-- ``:valid`` & ``:invalid`` would work with ``placeholder-shown``
-- ``:visited`` for potential links to show if visited or not
-- More complex style for ``select {}``
-- Pharacter count on ``<textarea>`` with something like ``<small>``
-- Pulsing effecting on titles *(color change + slight translates)*
-- Better accessibility on checkboxes and radios
-- Add in background theme related effects *(particules, small glowing lights, comets, etc.)*
-- Add some meanings to checkboxes values
