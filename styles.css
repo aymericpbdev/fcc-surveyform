@@ -55,11 +55,11 @@ body {
 
 @keyframes slideUp {
   from { 
-    transform: translateY(80px);
+    transform: translateY(0px);
     opacity: 0;
   }
   to { 
-    transform: translateY(0);
+    transform: translateY(-80px);
     opacity: 1;
   }
 }
@@ -294,7 +294,7 @@ button[type="submit"]:active {
   margin-left: var(--space-xs);
 }
 
-/* RESPONSIVE - Mobile */
+/* Mobile & Tablet */
 @media (max-width: 768px) {
   .container {
     padding: var(--space-md);
@@ -340,7 +340,7 @@ button[type="submit"]:active {
   }
 }
 
-/* ACCESSIBILITY */
+/* Accessibility */
 *:focus-visible {
   outline: 3px solid var(--starlight);
   outline-offset: 2px;
