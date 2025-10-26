@@ -1,124 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A quirky survey about nothing - exploring the concept of nothingness through absurd questions">
     <title>Survey About NOTHING</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <h1 id="title">A simple Survey about NOTHING</h1>
-        <p id="description">
-          This survey must be filled very seriously, NOTHING is <strong><u>no joke</u></strong>
-        </p>
-      </header>
-      <h2>
-        Who the <img src="https://img.freepik.com/psd-premium/canard-caoutchouc-jaune-isole-fond-transparent-png-psd_888962-1809.jpg" class="duck" alt="duck" /> are you ?!
-      </h2>
-      <form id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name">
-            Has it a name ? <span class="required">*</span>
-          </label>
-          <input 
-            id="name" 
-            type="text" 
-            placeholder="Declare yourself, peasant !" 
-            required />
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email">
-            Has it a mail on the Internets ? <span class="required">*</span>
-          </label>
-          <input 
-            id="email" 
-            type="email" 
-            placeholder="What's your box ?" 
-            required />
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number">
-            How far are we from its birth ? <span class="required">*</span>
-          </label>
-          <input 
-            id="number"
-            type="number"
-            min="13"
-            max="99"
-            placeholder="?!" 
-            required />
-        </div>
-        <h2>NOTHING is real, but... What is it ?</h2>
-        <!-- Radio buttons -->
-        <div class="form-group radio-group">
-          <label>
-            <input type="radio" name="existence" value="black-hole" checked />
-            A black hole
-          </label>
-          <label>
-            <input type="radio" name="existence" value="void" />
-            The void
-          </label>
-          <label>
-            <input type="radio" name="existence" value="blank" />
-            A blank
-          </label>
-          <label>
-            <input type="radio" name="existence" value="idk" />
-            I don't know, but surely real !
-          </label>
-          <label>
-            <input type="radio" name="existence" value="nothing" />
-            Obviously, nothing is NOTHING...
-          </label>            
-        </div>
-        <!-- Dropdown list -->
-        <div class="form-group">
-          <h2>What color would be NOTHING if you could see it ?</h2>
-          <select id="dropdown" required>
-            <option disabled selected value>Choose a color</option>
-            <option value="white">As pure marble</option>
-            <option value="black">As a moonless night</option>
-            <option value="blue">Like a "great" movie by Luc Besson</option>
-            <option value="green">Just like chlorophyll</option>
-            <option value="none">None because NOTHING is beyond our perception</option>
-            <option value="idk">I don't know !</option>
-          </select>
-        </div>
-        <!-- Checkboxes -->
-        <div class="form-group checkbox-group">
-          <h2>How did you end up here ? <span class="optional">(Check all, <em>or not</em>)</span></h2>
-          <label>
-            <input type="checkbox" value="opened-door" />
-            I was lost and found an opened door, so here I am
-          </label>
-          <label>
-            <input type="checkbox" value="dark-hallway" />
-           I was walking down a long, dark hallway with a light at the end
-          </label>
-          <label>
-            <input type="checkbox" value="funeral-letter" />
-            I received a letter inviting me to the funeral of a distant cousin
-          </label>
-          <label>
-            <input type="checkbox" value="no-idea" />
-            I've got no idea ! I was crossing the road right before
-          </label>          
-        </div>
-        <!-- Comment textarea -->
-        <div class="form-group">
-          <h3>Any suggestion for more headaches ?</h3>
-          <textarea
-            id="comments"
-            rows="5"
-            placeholder="Sometimes, somewhere, but not over the rainbow"></textarea>
-        </div>
-        <!-- Submit button -->
-        <h4>May we meet again</h4>
-        <button type="submit">Submit to the void</button>
-      </form>
+    <link rel="stylesheet" href="surveyform-styles.css">
+</head>
+<body>
+    <a href="#survey-content" class="skip-link">Skip to survey</a>
+    <div class="page-container">
+        <header class="survey-header">
+            <h1 id="title">A simple Survey about NOTHING</h1>
+            <p id="description">
+                This survey must be filled very seriously, NOTHING is <strong><u>no joke</u></strong>
+            </p>
+        </header>
+        <main id="survey-content">
+            <h2>
+                Who the <img src="https://img.freepik.com/psd-premium/canard-caoutchouc-jaune-isole-fond-transparent-png-psd_888962-1809.jpg" class="duck-image" alt="rubber duck" /> are you ?!
+            </h2>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">
+                        Has it a name ? <span class="required-indicator">*</span>
+                    </label>
+                    <input id="name" type="text" placeholder="Declare yourself, peasant !" required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">
+                        Has it a mail on the Internets ? <span class="required-indicator">*</span>
+                    </label>
+                    <input id="email" type="email" placeholder="What's your box ?" required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">
+                        How far are we from its birth ? <span class="required-indicator">*</span>
+                    </label>
+                    <input id="number" type="number" min="13" max="99" placeholder="?!" required />
+                </div>
+                <h2>NOTHING is real, but... What is it ?</h2>
+                <div class="form-group radio-group">
+                    <label>
+                        <input type="radio" name="existence" value="black-hole" checked />
+                        A black hole
+                    </label>
+                    <label>
+                        <input type="radio" name="existence" value="void" />
+                        The void
+                    </label>
+                    <label>
+                        <input type="radio" name="existence" value="blank" />
+                        A blank
+                    </label>
+                    <label>
+                        <input type="radio" name="existence" value="idk" />
+                        I don't know, but surely real !
+                    </label>
+                    <label>
+                        <input type="radio" name="existence" value="nothing" />
+                        Obviously, nothing is NOTHING...
+                    </label>
+                </div>
+                <div class="form-group">
+                    <h2>What color would be NOTHING if you could see it ?</h2>
+                    <select id="dropdown" required>
+                        <option disabled selected value>Choose a color</option>
+                        <option value="white">As pure marble</option>
+                        <option value="black">As a moonless night</option>
+                        <option value="blue">Like a "great" movie by Luc Besson</option>
+                        <option value="green">Just like chlorophyll</option>
+                        <option value="none">None because NOTHING is beyond our perception</option>
+                        <option value="idk">I don't know !</option>
+                    </select>
+                </div>
+                <div class="form-group checkbox-group">
+                    <h2>How did you end up here ? <span class="optional-indicator">(Check all, <em>or not</em>)</span></h2>
+                    <label>
+                        <input type="checkbox" value="opened-door" />
+                        I was lost and found an opened door, so here I am
+                    </label>
+                    <label>
+                        <input type="checkbox" value="dark-hallway" />
+                        I was walking down a long, dark hallway with a light at the end
+                    </label>
+                    <label>
+                        <input type="checkbox" value="funeral-letter" />
+                        I received a letter inviting me to the funeral of a distant cousin
+                    </label>
+                    <label>
+                        <input type="checkbox" value="no-idea" />
+                        I've got no idea ! I was crossing the road right before
+                    </label>
+                </div>
+                <div class="form-group">
+                    <h3>Any suggestion for more headaches ?</h3>
+                    <textarea id="comments" rows="5" placeholder="Sometimes, somewhere, but not over the rainbow"></textarea>
+                </div>
+                <h4>May we meet again</h4>
+                <button type="submit">Submit to the void</button>
+            </form>
+        </main>
     </div>
-  </body>
+</body>
 </html>
