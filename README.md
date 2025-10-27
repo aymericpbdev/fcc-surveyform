@@ -1,4 +1,4 @@
-# 1st project for FreeCodeCamp Certification: Responsive Web Design Certification 
+# 1st project for FreeCodeCamp - Certification: Responsive Web Design 
 ## fcc-surveyform
 ### DEMO: https://aymericpbdev.github.io/fcc-surveyform/
 
